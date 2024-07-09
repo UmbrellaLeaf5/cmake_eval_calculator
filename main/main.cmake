@@ -5,8 +5,10 @@ function(main)
   message("--------------------\n Programm starts \n--------------------")
 
   file_lines_read(${PROJECT_DIR}/input.txt FILE_LINES)
+
   message("")
-  lines_calc(${FILE_LINES} RES_LINES)
+
+  lines_calc("${FILE_LINES}" RES_LINES)
 
   message("--------------------\n  Programm ends  \n--------------------")
 endfunction()
