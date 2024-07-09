@@ -1,9 +1,9 @@
 include(${MAIN_DIR}/file_lines_read.cmake)
 
 function(main)
-  message(STATUS "Programm starts")
+  message("--------------------\n Programm starts \n--------------------")
 
-  file_lines_read(${PROJECT_DIR}/input.txt)
+  file_lines_read(${PROJECT_DIR}/input.txt FILE_LINES)
 
-  message(STATUS "Programm ends")
+  message("--------------------\n  Programm ends  \n--------------------")
 endfunction()
