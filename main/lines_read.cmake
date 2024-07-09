@@ -1,5 +1,4 @@
-
-function(file_lines_read FILE_NAME OUTPUT_LINES)
+function(lines_read FILE_NAME OUTPUT_LINES)
   file(STRINGS "${FILE_NAME}" FILE_LINES)
 
   set(LINE_COUNTER 1)
