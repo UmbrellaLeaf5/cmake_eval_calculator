@@ -1,6 +1,5 @@
-
-function(file_lines_read FILE_NAME OUTPUT_LINES)
-  file(STRINGS "${FILE_NAME}" FILE_LINES)
+function(file_lines_read FILE_PATH OUTPUT_FILE_LINES)
+  file(STRINGS "${FILE_PATH}" FILE_LINES)
 
   set(LINE_COUNTER 1)
 
@@ -11,5 +10,5 @@ function(file_lines_read FILE_NAME OUTPUT_LINES)
     math(EXPR LINE_COUNTER "${LINE_COUNTER} + 1")
   endforeach()
 
-  set(${OUTPUT_LINES} ${FILE_LINES} PARENT_SCOPE)
+  set(${OUTPUT_FILE_LINES} ${FILE_LINES} PARENT_SCOPE)
 endfunction()
