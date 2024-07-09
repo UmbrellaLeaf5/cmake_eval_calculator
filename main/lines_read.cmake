@@ -1,5 +1,6 @@
 function(lines_read FILE_PATH OUTPUT_LINES)
   file(STRINGS "${FILE_PATH}" FILE_LINES)
+  message("-- Open ${FILE_PATH} with STRINGS: success \n")
 
   set(LINE_COUNTER 1)
 
