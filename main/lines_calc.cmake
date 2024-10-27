@@ -6,11 +6,11 @@ function(lines_calc LINES OUTPUT_RES_LINES)
   set(LINE_COUNTER 1)
 
   # Print a message to indicate the start of the results
-  message("Resaults:")
+  message("Results:")
 
   # Iterate through the input lines, perform a calculation, and store the results
   foreach(LINE ${LINES})
-    # TODO: in fact, there should be my own function here
+    # TODO: in fact, there should be my own function
     math(EXPR RES "${LINE}")
 
     # Print the calculated result for each line

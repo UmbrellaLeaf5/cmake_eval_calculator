@@ -9,7 +9,7 @@ function(lines_write FILE_PATH NEW_FILE_LINES)
   message("-- Open ${FILE_PATH} with WRITE: success \n")
 
   # Print a message to indicate the start of writing the results to the file
-  message("Writing resaults to file... \n")
+  message("Writing Results to file... \n")
 
   # Iterate through the calculated results and write them to the output file
   foreach(LINE ${NEW_FILE_LINES})
