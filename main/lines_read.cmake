@@ -6,7 +6,7 @@ function(lines_read FILE_PATH OUTPUT_LINES)
   file(STRINGS "${FILE_PATH}" FILE_LINES)
 
   # Print a message to indicate that the file was opened successfully
-  message("-- Open ${FILE_PATH} with STRINGS: success \n")
+  # message("-- Open ${FILE_PATH} with STRINGS: success \n")
 
   # Initialize a line counter
   set(LINE_COUNTER 1)

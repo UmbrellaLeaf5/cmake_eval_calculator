@@ -8,6 +8,7 @@ include(${MAIN_DIR}/lines_write.cmake)
 # The main function that drives the program
 function(main)
   message("--------------------\n Program starts \n--------------------")
+  message("")
 
   # Call the lines_read function to read the input file
   lines_read(${PROJECT_DIR}/input.txt FILE_LINES)

@@ -6,10 +6,10 @@ function(lines_write FILE_PATH NEW_FILE_LINES)
   file(WRITE "${FILE_PATH}" "")
 
   # Print a message to indicate that the file was opened successfully for writing
-  message("-- Open ${FILE_PATH} with WRITE: success \n")
+  # message("-- Open ${FILE_PATH} with WRITE: success \n")
 
   # Print a message to indicate the start of writing the results to the file
-  message("Writing Results to file... \n")
+  # message("Writing Results to file... \n")
 
   # Iterate through the calculated results and write them to the output file
   foreach(LINE ${NEW_FILE_LINES})
